@@ -4,16 +4,19 @@
 <meta charset="UTF-8">
 <title>Velkommen til min hjemmeside!</title>
 </head>
-<body>
 
-<head>
+
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
  ></div>
       <div id="footer">
-<body>
+
 <h2 style="color:#13dceb">Williams gode hjemmside.</h2>
+
+<head>
+    
+
 
 <p>Jeg går op i kaffe, højttalere og computere. </p>
 
@@ -23,7 +26,40 @@
 <img src="pwerijgeioro.JFIF" />
 <img src="spdokjvf.JPG" />
 
-<p>Du har desværre noget bunden af denne spændende hjemmeside håber alt det indhold du har fundet er brugbart.</p></div>
+
+
+<div class="scrolling-text">
+  Denne hjemmeside er endnu ikke færdig 
+</div>
+
+<style>
+  .scrolling-text {
+    position: relative;
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    from {
+     left: 100%;
+     width: 500%; 
+    }
+    to {
+      left: -100%;
+      width: 500%;
+    }
+  }
+</style>
+
+<script>
+  function scrollleft() {
+    document.getElementById("scrolling-text").style.left = '100%';
+    setTimeout(scrollleft, 25);
+  }
+   scrollleft();
+</script>
+
+ <p>Du har desværre noget bunden af denne spændende hjemmeside håber alt det indhold du har fundet er brugbart.</p></div>
 
 </body>
 </html>
